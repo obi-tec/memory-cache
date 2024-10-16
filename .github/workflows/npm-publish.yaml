@@ -20,6 +20,14 @@ jobs:
           scope: '@obi-tec'
       - run: npm i
       - run: npm run check-formatter
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: |
+            dist
+            package.json
+            package-lock.json
 
   publish-npm:
     needs: build
@@ -31,7 +39,19 @@ jobs:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@obi-tec'
-      - run: npm ci
-      - run: npm publish --access public
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+
+      - name: Install production dependencies
+        run: npm install --production
+
+      - name: Install NPM CI
+        run: npm ci
+
+      - name: Publish to NPM
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.OBI_TEC_NPM_TOKEN }}
