@@ -49,14 +49,14 @@ class MemoryCache {
   /**
    * Returns the time-to-live (TTL) of a key in the cache.
    */
-  getTtl(key: string): number | undefined {
+  getTTL(key: string): number | undefined {
     return global._cache.getTtl(key);
   }
 
   /**
    * Sets the time-to-live (TTL) of a key in the cache.
    */
-  setTtl(key: string, ttl: number): void {
+  setTTL(key: string, ttl: number): void {
     global._cache.ttl(key, ttl);
   }
 }

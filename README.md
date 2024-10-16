@@ -67,14 +67,14 @@ Flushes the entire cache, removing all entries.
 
 Returns an array of all keys currently stored in the cache.
 
-### `getTtl(key: string): number | undefined`
+### `getTTL(key: string): number | undefined`
 
 Retrieves the remaining TTL (Time to Live) for a given key.
 
 - `key`: The key of the value to check the TTL for.
 - Returns: The remaining TTL in seconds, or `undefined` if the key does not exist or has no TTL set.
 
-### `setTtl(key: string, ttl: number): void`
+### `setTTL(key: string, ttl: number): void`
 
 Updates the TTL (Time to Live) for an existing cache entry.
 
