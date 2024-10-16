@@ -8,7 +8,7 @@
     "build": "tsc"
   },
   "author": "Obi Tec",
-  "license": "Apache License",
+  "license": "MIT License",
   "dependencies": {
     "node-cache": "^5.1.2"
   },
