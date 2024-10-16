@@ -27,7 +27,6 @@ jobs:
           path: |
             dist
             package.json
-            package-lock.json
 
   publish-npm:
     needs: build
