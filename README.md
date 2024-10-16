@@ -32,7 +32,7 @@ const value = MemoryCache.get('key');
 console.log(value); // Output: 123
 
 // Delete a value from the cache
-cache.delete('key');
+MemoryCache.del('key');
 ```
 
 ## API
