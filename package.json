@@ -4,7 +4,8 @@
   "description": "Memory Cache TS is a TypeScript library for caching data in memory to improve the performance of your applications.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check-formatter": "biome check",
+    "build": "tsc"
   },
   "author": "Obi Tec",
   "license": "Apache License",
