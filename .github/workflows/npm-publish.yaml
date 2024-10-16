@@ -26,6 +26,7 @@ jobs:
           name: build
           path: |
             dist
+            README.md
             package.json
 
   publish-npm:
