@@ -28,6 +28,7 @@ jobs:
             dist
             README.md
             package.json
+            package-lock.json
 
   publish-npm:
     needs: build
