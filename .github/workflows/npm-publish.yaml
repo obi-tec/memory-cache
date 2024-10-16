@@ -26,7 +26,6 @@ jobs:
           name: build
           path: |
             dist
-            .npmrc
             README.md
             package.json
             package-lock.json
