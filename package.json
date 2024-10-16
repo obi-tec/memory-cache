@@ -2,7 +2,8 @@
   "name": "@obi-tec/memory-cache",
   "version": "1.0.0",
   "description": "Memory Cache is a TypeScript library for caching data in memory to improve the performance of your applications.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "check-formatter": "biome check",
     "build": "tsc"
