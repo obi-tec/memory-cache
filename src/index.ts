@@ -11,37 +11,52 @@ class MemoryCache {
     }
   }
 
-  // Set a value with a key and a time to live (ttl) in seconds
-  set<T>(key: string, value: T, ttl = 60): boolean {
-    return global._cache.set(key, value, ttl) ?? false;
+  /**
+   * Stores a value in the cache with a specified time-to-live (TTL).
+   */
+  set<T>(key: string, value: T, ttl = 60): void {
+    global._cache.set(key, value, ttl);
   }
 
-  // Get a value by key
+  /**
+   * Retrieves a value from the cache. If the key does not exist, returns undefined.
+   */
   get<T>(key: string): T | undefined {
     return global._cache.get(key) as T;
   }
 
-  // Delete a value by key
+
+  /**
+   * Deletes a key from the cache.
+   */
   del(key: string): void {
     global._cache.del(key);
   }
 
-  // Clear all keys and values
+  /**
+   * Deletes all keys from the cache.
+   */
   flush(): void {
     global._cache.flushAll();
   }
 
-  // Get all keys
+  /**
+   * Returns an array of all keys in the cache.
+   */
   keys(): string[] {
     return global._cache.keys() ?? [];
   }
 
-  // Get ttl of a key
+  /**
+   * Returns the time-to-live (TTL) of a key in the cache.
+   */
   getTtl(key: string): number | undefined {
     return global._cache.getTtl(key);
   }
 
-  // Set ttl of a key
+  /**
+   * Sets the time-to-live (TTL) of a key in the cache.
+   */
   setTtl(key: string, ttl: number): void {
     global._cache.ttl(key, ttl);
   }
