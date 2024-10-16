@@ -25,7 +25,6 @@ class MemoryCache {
     return global._cache.get(key) as T;
   }
 
-
   /**
    * Deletes a key from the cache.
    */
