@@ -18,9 +18,6 @@
   "bugs": {
     "url": "https://github.com/obi-tec/memory-cache/issues"
   },
-  "publishConfig": {
-    "@obi-tec:registry": "https://npm.pkg.github.com"
-  },
   "keywords": [
     "memory",
     "cache",
