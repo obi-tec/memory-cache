@@ -9,7 +9,7 @@
     "build": "tsc"
   },
   "author": "Obi Tec",
-  "license": "MIT License",
+  "license": "Apache License",
   "bugs": {
     "url": "https://github.com/obi-tec/memory-cache/issues"
   },
