@@ -41,12 +41,9 @@ jobs:
           scope: '@obi-tec'
 
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: build
-
-      - name: Install production dependencies
-        run: npm install --production
 
       - name: Install NPM CI
         run: npm ci
