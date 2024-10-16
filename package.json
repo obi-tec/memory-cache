@@ -1,6 +1,6 @@
 {
   "name": "@obi-tec/memory-cache",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Memory Cache is a TypeScript library for caching data in memory to improve the performance of your applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,10 +10,17 @@
   },
   "author": "Obi Tec",
   "license": "Apache License",
+  "homepage": "https://github.com/obi-tec/memory-cache",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obi-tec/memory-cache.git"
+  },
   "bugs": {
     "url": "https://github.com/obi-tec/memory-cache/issues"
   },
-  "homepage": "https://github.com/obi-tec/memory-cache",
+  "publishConfig": {
+    "@obi-tec:registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "memory",
     "cache",
