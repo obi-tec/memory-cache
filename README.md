@@ -1,6 +1,6 @@
-# Memory Cache TS
+# Memory Cache
 
-Memory Cache TS is a TypeScript library for in-memory caching. It provides a simple and efficient way to store and retrieve data in memory, improving the performance of your applications.
+Memory Cache is a TypeScript library for in-memory caching. It provides a simple and efficient way to store and retrieve data in memory, improving the performance of your applications.
 
 ## Features
 
@@ -14,7 +14,7 @@ Memory Cache TS is a TypeScript library for in-memory caching. It provides a sim
 To install the library, use npm or yarn:
 
 ```bash
-npm install memory-cache-ts
+npm install @obi-tec/memory-cache
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install memory-cache-ts
 Here's a basic example of how to use Memory Cache TS:
 
 ```typescript
-import MemoryCache from 'memory-cache-ts';
+import MemoryCache from '@obi-tec/memory-cache';
 
 // Set a value in the cache
 MemoryCache.set<number>('key', 123, 60); // The value will expire in 60 seconds
